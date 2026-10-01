@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+  <h1>Abdul Rafey</h1>
+
+  <nav>
+    <a href="#about">About</a><br>
+
+    <a href="#skills">Skills</a><br>
+
+    <a href="#timeline">Timeline</a><br>
+
+    <a href="#contact">Contact</a><br>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <article id="about">
+    <h2>About Me</h2>
+
+    <figure>
+      <img src="img.jpeg" alt="Photo of beach" width="180">
+      <figcaption>Rate this!</figcaption>
+    </figure>
+
+    <p>This is beach pic.</p>
+
+    <blockquote>
+      <p>"The best way to learn is by building."</p>
+    </blockquote>
+  </article>
+
+
+  <section id="skills">
+    <h2>Skills I'm Building This Semester</h2>
+
+    <ul>
+      <li>HTML5 &amp; semantic markup</li>
+      <li>CSS3 layout (Flexbox &amp; Grid)</li>
+      <li>Git &amp; GitHub collaboration</li>
+    </ul>
+  </section>
+
+
+  <section id="timeline">
+    <h2>My Timeline So Far</h2>
+
+    <ol>
+      <li>Completed Lab 1: set up my environment and pushed to GitHub</li>
+      <li>Built my first static webpage</li>
+      <li>Started this semantic HTML5 profile page</li>
+    </ol>
+  </section>
+
+
+  <aside>
+    <h2>Fun Fact</h2>
+    <p>I just want sleep and play games online .</p>
+  </aside>
+
+
+ <section id="media">
+  <h2>A Short Clip</h2>
+
+  <video controls width="480">
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <p>
+    <strong>Transcript summary:</strong>
+    A 1 minute introduction where I talk about why I'm taking about my project in summer .
+  </p>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+
+      <fieldset>
+        <legend>Send me a message</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+          <option value="general">General</option>
+          <option value="feedback">Feedback</option>
+          <option value="bug">Report a Bug</option>
+        </select>
+
+        <p>Preferred reply method:</p>
+
+        <label>
+          <input type="radio" name="reply" value="email" checked>
+          Email
+        </label>
+
+        <label>
+          <input type="radio" name="reply" value="phone">
+          Phone
+        </label>
+
+        <label>
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Subscribe to updates
+        </label>
+
+        <label for="callback-date">Preferred callback date</label>
+        <input type="date" id="callback-date" name="callback-date">
+
+        <label for="urgency">
+          Urgency (1 = whenever, 10 = right now)
+        </label>
+
+        <input
+          type="range"
+          id="urgency"
+          name="urgency"
+          min="1"
+          max="10"
+          value="5"
+        >
+
+        <label for="message">Message</label>
+
+               <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          minlength="10"
+        ></textarea>
+
+        <button type="submit">Send</button><br>
+
+      </fieldset>
+
+    </form>
+
+    <button id="clear-btn" type="button">Clear Saved Data</button>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>
+    Feel free to visit the Website and look..........
+  </p>
+</footer>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
